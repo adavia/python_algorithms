@@ -2,6 +2,22 @@ def reverse_string(s):
     # Simplified way to return a reversed string
     # return s[::-1]
 
+    # Using join
+    # st = ''.join(reversed(s))
+    # return st
+
+    # Using reverse
+    # temp_list = list(s)
+    # temp_list.reverse()
+    # return ''.join(temp_list)
+
+    # Another simplified version
+    # res = ''
+
+    # for char in s:
+    #     res = char + res
+    # return res
+
     # Using a while a loop
     res = ''
     i = len(s) - 1
@@ -13,5 +29,5 @@ def reverse_string(s):
     return res
 
 print(reverse_string('hello'))
-print(reverse_string('Howdy'))
-print(reverse_string('Greetings from Earth'))
+# print(reverse_string('Howdy'))
+# print(reverse_string('Greetings from Earth'))
