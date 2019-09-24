@@ -1,5 +1,5 @@
 def pyramid(num):
-    mid = (2 * num - 1) // 2
+    mid = (num * 2 - 1) // 2
 
     for row in range(0, num):
         level = ''
