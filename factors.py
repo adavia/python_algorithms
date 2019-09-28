@@ -6,6 +6,9 @@ def factors(n):
 
     # return results
 
+    # Using a list comprehension
+    # factors = [k for k in range(1,n+1) if n % k == 0]
+
     # Using a generator
     
     # for k in range(1, n + 1):
