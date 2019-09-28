@@ -1,3 +1,4 @@
+import math
 def factors(n):
     # results = []
     # for k in range(1, n + 1):
@@ -17,7 +18,7 @@ def factors(n):
 
     # Generator that computes factors
     k=1
-    while k * k < n: # while k < sqrt(n)
+    while k < math.sqrt(n): # while k < sqrt(n)
         if n % k == 0:
             yield k
             yield n // k
