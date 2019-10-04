@@ -4,14 +4,34 @@ def prefix_average(ls):
     average of S[0], ..., S[j].
     """
 
+    # length = len(ls)
+    # aux = [0] * length
+
+    # for i in range(length):
+    #     total = 0
+    #     for j in range(i + 1):
+    #         print(j)
+    #         total += ls[j]
+    #     aux[i] = total / (i + 1)
+
+    # return aux
+
+    # Improved algorithm
+
+    # length = len(ls)
+    # aux = [0] * length
+
+    # for i in range(length):
+    #     aux[i] = sum(ls[0:i + 1]) / (i + 1)
+
+    # return aux
+
     length = len(ls)
     aux = [0] * length
+    total = 0
 
     for i in range(length):
-        total = 0
-        for j in range(i + 1):
-            print(j)
-            total += ls[j]
+        total += ls[i]
         aux[i] = total / (i + 1)
 
     return aux
